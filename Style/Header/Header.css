@@ -7,7 +7,8 @@
 
 :root {
     --main-color: #FFF;
-    --cinza-claro: #4A5568;
+    --cinza-claro: #8E8E8E;
+    --roxo: #A718A1;
 }   
 
 .navbar {
@@ -55,7 +56,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #FFF;
+    background-color: var(--main-color);
     top: 4em;
     right: 0;
     width: 100%;
@@ -73,5 +74,5 @@
 }
 
 .menu a:hover {
-    background-color: var(--main-color);
+    background-color: var(--roxo);
 }
