@@ -1,0 +1,63 @@
+:root {
+    --main-color: #FFF;
+}   
+
+footer{
+    background: linear-gradient(to top, #5F2278, #A718A1);
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+}
+
+.frame1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.logo_footer {
+    width: 40px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.titulo_img{
+    color:var(--main-color);
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitulo_img{
+    color: var(--main-color);
+    font-size: 14px;
+    text-align: center;
+}
+
+.frame2{
+    
+}
+
+.nav-bar{
+    
+}
+
+.titulo_link{
+    color: var(--main-color);
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.link{
+    
+}
+
+
+
+

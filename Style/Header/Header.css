@@ -74,5 +74,6 @@
 }
 
 .menu a:hover {
-    background-color: var(--roxo);
+    background-color: var(--main-color);
+    color: var(--roxo);
 }
