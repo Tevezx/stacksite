@@ -2,65 +2,55 @@
     --main-color: #FFF;
     --roxo: #A718A1;
     --linha: #978383;
-}   
+}
 
-footer{
+.main-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
     background: linear-gradient(to top, #5F2278, #A718A1);
     width: 100%;
-    height: auto;
-    bottom: 0;
-    position: fixed;
+    padding: 2rem 1rem;
+    margin-top: auto;
 }
+
 
 .frame1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 .logo_footer {
     width: 40px;
     height: auto;
-    padding-top: 1em;
 }
 
-.titulo_img{
-    color:var(--main-color);
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.subtitulo_img{
+.titulo_img, .subtitulo_img {
     color: var(--main-color);
     font-size: 14px;
-    text-align: center;
 }
 
-.nav-bar{
+.nav-bar {
     padding-top: 1.5em;
-    margin: 0;
 }
 
-.titulo_link{
+.titulo_link {
     color: var(--main-color);
     font-weight: bold;
-    padding-left: 0.5em;
     font-size: 14px;
- 
 }
 
-.lista{
-    text-decoration: none;
+.lista {
     list-style-type: none;
     color: var(--main-color);
-    padding-left: 0.5em;
-    padding-top: 0.2em;
+    padding-left: 0;
     font-size: 14px;
 }
 
@@ -74,53 +64,35 @@ footer{
     transform: scale(1.1);
 }
 
-.footer-contact{
-    padding-left: 0.5em;
+.footer-contact {
     padding-top: 1em;
 }
 
-.contact{
+.contact {
     font-size: 14px;
     font-weight: bold;
     color: var(--main-color);
 }
 
-.duvida{
-    font-size: 14px;
-}
-
 .footer-social {
-    padding-top: 1em;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 10px;
 }
 
-.footer-social a {
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
+.footer-social img {
+    transition: transform 0.3s ease;
 }
 
-.footer-social a:hover {
-    transform: scale(1.2); 
+.footer-social img:hover {
+    transform: scale(1.2);
 }
 
 .footer-copyright {
-    border-top: 1px solid #978383; 
-    padding-top: 1em;
-    padding-bottom: 0;
+    border-top: 1px solid var(--linha);
     text-align: center;
-    font-size: 12px; 
-    color: var(--main-color); 
-    font-family: Arial, sans-serif; 
+    font-size: 12px;
+    color: var(--main-color);
+    padding-top: 1rem;
 }
-
-.footer-container {
-    padding-bottom: 0;
-    margin-bottom: 0; 
-}
-
-.copyryght{
-    padding-bottom: 1em;
-}
-

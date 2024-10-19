@@ -31,10 +31,10 @@ export default function Footer(){
                     </p>
                 </div>
                 <div className="footer-social">
-                    <a href="https://facebook.com"><img src={facebook}/></a>
-                    <a href="https://instagram.com"><img src={instagram}/></a>
-                    <a href="https://github.com"><img src={github}/></a>
-                    <a href="https://linkedin.com"><img src={linkedln}/></a>
+                    <a href="https://facebook.com"><img src={facebook} alt="Facebook"/></a>
+                    <a href="https://instagram.com"><img src={instagram} alt="Instagram"/></a>
+                    <a href="https://github.com"><img src={github} alt="GitHub"/></a>
+                    <a href="https://linkedin.com"><img src={linkedln} alt="LinkedIn"/></a>
                 </div>
                 <div className="footer-copyright">
                     <p className='copyryght'>© 2024 Copyright by Stack Corp®. All rights reserved.</p>
