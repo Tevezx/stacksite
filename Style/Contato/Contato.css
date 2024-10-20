@@ -1,0 +1,45 @@
+:root{
+    --maincolor: #FFF;
+    --descricao: #748296;
+    --link: #e94f89;
+}
+
+.button{
+    width: 100%;
+    border-width: 2px;
+    border-color: blue;
+    border-radius: 5em;
+    margin-bottom: 10px;
+}
+.Contato-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+    position: relative;
+    margin: 20px ;
+}
+.estrela img{
+    position:absolute;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Mantém a proporção da imagem */
+
+    
+}
+.text{
+    padding-top: 1em;
+    font-size: 15px;
+    text-align: center;
+    color: var(--descricao);
+    max-width: 280px;
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.titulo, .txtContato{
+    font-size: 20px;
+    text-align: left;
+    margin-right: 10px;
+}
