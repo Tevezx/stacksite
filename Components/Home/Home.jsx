@@ -2,7 +2,6 @@ import '../../Style/Home/Home.css';
 import estrela from '../../src/assets/estrela.png';
 import fundo from '../../src/assets/fundo.png';
 import logo_home from '../../src/assets/logo_home.png';
-
 import estrela_pequena from '../../src/assets/estrela_pequena.png'
 
 export default function Home() {

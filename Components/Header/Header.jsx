@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../Style/Header/Header.css';
 import logotipo from '../../src/assets/logotipo.png';
 import menuIcon from '../../src/assets/menu.png';
@@ -23,10 +24,11 @@ export default function Header() {
                 </div>
                 {isOpen && (
                     <div className='menu'>
-                        <a href="#" onClick={toggleMenu}>Home</a>
-                        <a href="#" onClick={toggleMenu}>Sobre Nossa Empresa</a>
-                        <a href="#" onClick={toggleMenu}>Nossa Equipe</a>
-                        <a href="#" onClick={toggleMenu}>Soluções</a>
+                        <Link to="/" onClick={toggleMenu}>Home</Link>
+                        <Link to="/empresa" onClick={toggleMenu}>Sobre Nossa Empresa</Link>
+                        <Link to="/nossa-equipe" onClick={toggleMenu}>Nossa Equipe</Link>
+                        <Link to="/solucoes" onClick={toggleMenu}>Soluções</Link>
+                        <Link to="/contato" onClick={toggleMenu}>Contato</Link>
                     </div>
                 )}
             </nav>

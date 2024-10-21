@@ -1,4 +1,4 @@
-import '../../Style/Contato/Contato.css';
+//*import '../../Style/Contato/Contato.css';
 import estrela from '../../src/assets/estrela.png';
 import git from '../../src/assests_contato/github.png';
 import facebook from '../../src/assests_contato/facebook.png';
