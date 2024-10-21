@@ -1,25 +1,34 @@
-:root{
+:root {
     --maincolor: #FFF;
     --subcolor: black;
-    --roxo:#e94f89;
+    --roxo: #e94f89;
     --descricao: #748296;
 }
 
 .empresa-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px;
     background-color: var(--maincolor);
     position: relative;
 }
 
-.section-content{
+.section-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda antes da linha2 */
     justify-content: space-between;
     max-width: 100%;
     margin: 20px 0;
+}
+
+.text-content {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.text-content.direita {
+    align-self: flex-end; /* Alinha a parte após a linha2 à direita */
+    text-align: right; /* Alinha o texto à direita */
 }
 
 .text-content h2 {
@@ -59,14 +68,13 @@
     margin: 20px 0;
 }
 
-.linha img, .linha2 img{
+.linha img {
     width: 70px; 
     height: auto;
 }
 
-.linha2{
-   float: left;
+.linha2 {
+    align-self: flex-end;
+    margin: 20px 0;
+    text-align: right;
 }
-
-
-

@@ -30,7 +30,7 @@ export default function Empresa() {
             <div className="linha2">
                 <img src={linha} alt="Linha decorativa no topo" />
             </div>
-            <div className="text-content">
+            <div className="text-content direita">
                 <h2>Conheça um pouco mais</h2>
                 <h1>
                     <span className="sobre-nossa">Sobre Nossa</span>
@@ -41,8 +41,8 @@ export default function Empresa() {
                     conhecimentos e tecnologias. Nossos principais valores são a Honestidade, Qualidade, 
                     Liderança, Paixão, Impacto, Comunicação e Responsabilidade.
                 </p>
-                </div>
-            <div className="image-content">
+            </div>
+            <div className="image-content direita">
                 <img src={image1} alt="Discussão de ideias" />
             </div>
         </section>

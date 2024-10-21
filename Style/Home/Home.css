@@ -19,7 +19,7 @@
 }
 
 .logo_home img {
-    padding-top: 100px;
+    padding-top: 160px;
     width: 15.625rem;
     height: auto;
 }
@@ -68,11 +68,10 @@
 }
 
 .estrela {
-    padding-bottom: 40em;
+    padding-bottom: 30em;
     right: 1.25rem;
 }
 
 .estrela2 {
-    padding-bottom: 7em;
     left: 0.625rem;
 }
