@@ -19,7 +19,7 @@
 }
 
 .logo_home img {
-    padding-top: 160px;
+    margin-top: 210px;
     width: 15.625rem;
     height: auto;
 }
@@ -43,18 +43,12 @@
     display: flex; 
     align-items: center;
     justify-content: center; 
-    margin-top: 1.875rem;
+    margin-top: 3rem;
     z-index: 1; 
 }
 
 .ilustração img {
     max-width: 100%;
-    height: auto;
-}
-
-.degrade {
-    position: relative;
-    width: 100%;
     height: auto;
 }
 
@@ -68,10 +62,19 @@
 }
 
 .estrela {
-    padding-bottom: 30em;
+    padding-bottom: 25em;
     right: 1.25rem;
 }
 
 .estrela2 {
     left: 0.625rem;
+    padding-top: 7em;
+}
+
+.estrela3{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    
 }
