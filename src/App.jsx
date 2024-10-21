@@ -3,14 +3,13 @@ import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 import Home from '../Components/Home/Home';
 import Empresa from '../Components/Empresa/Empresa';
-import Contato from '../Components/Contato/Contato';
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/stacksite" element={<Home />} />
         <Route path="/empresa" element={<Empresa />} />
       </Routes>
       <Footer />

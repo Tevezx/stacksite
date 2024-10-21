@@ -38,9 +38,6 @@ export default function Contato() {
                 <img src={email} alt='img_email' className='img_email'/>
                 email
             </button>            
-            
-            
-
         </section>
     );
 }
