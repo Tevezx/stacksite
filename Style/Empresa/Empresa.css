@@ -1,0 +1,80 @@
+:root {
+    --maincolor: #FFF;
+    --subcolor: black;
+    --roxo: #e94f89;
+    --descricao: #748296;
+}
+
+.empresa-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--maincolor);
+    position: relative;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda antes da linha2 */
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.text-content {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.text-content.direita {
+    align-self: flex-end; /* Alinha a parte após a linha2 à direita */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.text-content h2 {
+    color: var(--subcolor);
+    font-size: 24px;
+    font-weight: normal; 
+}
+
+.text-content h1 {
+    font-size: 24px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.sobre-nossa {
+    color: var(--subcolor);
+}
+
+.empresa-gradient {
+    background: linear-gradient(135deg, #A718A1, #5F2278);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--descricao);
+    margin-bottom: 20px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.linha img {
+    width: 70px; 
+    height: auto;
+}
+
+.linha2 {
+    align-self: flex-end;
+    margin: 20px 0;
+    text-align: right;
+}

@@ -5,7 +5,6 @@
 }
 
 .home-container {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +19,8 @@
 }
 
 .logo_home img {
-    width: 250px;
+    padding-top: 160px;
+    width: 15.625rem;
     height: auto;
 }
 
@@ -29,7 +29,7 @@
     font-size: 15px;
     text-align: center;
     color: var(--descricao);
-    max-width: 280px;
+    max-width: 17.5rem;
 }
 
 .logo_home a {
@@ -43,7 +43,7 @@
     display: flex; 
     align-items: center;
     justify-content: center; 
-    margin-top: 30px;
+    margin-top: 1.875rem;
     z-index: 1; 
 }
 
@@ -68,11 +68,10 @@
 }
 
 .estrela {
-    padding-bottom: 40em;
-    right: 20px;
+    padding-bottom: 30em;
+    right: 1.25rem;
 }
 
 .estrela2 {
-    padding-bottom: 7em;
-    left: 10px;
+    left: 0.625rem;
 }

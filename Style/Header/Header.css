@@ -11,6 +11,10 @@
     --roxo: #A718A1;
 }
 
+body {
+    margin: 0;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +62,8 @@
     position: absolute;
     background-color: var(--main-color);
     top: 60px;
-    width: 100%;
+    left: 0;
+    width: 100vw;
     padding: 10px;
     z-index: 1001;
 }

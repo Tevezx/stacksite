@@ -1,13 +1,14 @@
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
 import Home from '../Components/Home/Home'
-import Contato from '../Components/Contato/Contato'
+import Empresa from '../Components/Empresa/Empresa'
 
 function App() {
   return (
     <>
       <Header/>
-      <Contato/>
+      <Home/>
+      <Empresa/>
       <Footer/>
     </>
   )
