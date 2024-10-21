@@ -13,7 +13,7 @@ export default function Home() {
             <div className='logo_home'>
                 <img src={logo_home} alt='home'/>
                 <p className='descricao_logo'>Lorem Ipsumis simply dummy text of the printing and typesetting industry.</p>
-                <a href='#'>See more Informations</a><p>⭢</p>
+                <a href='#'>See more Informatio11ns</a><p>⭢</p>
             </div>
             <div className='estrela2'>
                 <img src={estrela_pequena} alt='estrela2'/>

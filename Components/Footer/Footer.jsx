@@ -1,6 +1,6 @@
 import '../../Style/Footer/Footer.css';
 import logo_footer from '../../src/assets/logo_footer.png';
-import linkedln from '../../src/assets/linkedln.png';
+import linkedln from '../../src/assets/linkedin.png';
 import instagram from '../../src/assets/instagram.png';
 import facebook from '../../src/assets/facebook.png';
 import github from '../../src/assets/github.png';
