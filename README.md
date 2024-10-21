@@ -24,7 +24,7 @@ O site da empresa Stack foi desenvolvido utilizando as seguintes tecnologias:
 - **CSS3**: Linguagem de estilo para definir a apresentação e o layout do site.
   
 ## Visite nosso site!
-  https://bsduduh.github.io/stack-site
+  https://Tevezx.github.io/stacksite
   
 ## Instalação e Uso
 Para utilizar o código-fonte deste projeto, siga as instruções abaixo:
