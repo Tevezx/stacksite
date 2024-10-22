@@ -1,0 +1,58 @@
+:root {
+    --maincolor: #FFF;
+    --subcolor: black;
+    --roxo: #e94f89;
+    --descricao: #748296;
+}
+
+.equipe-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--maincolor);
+    position: relative;
+}
+
+.section-equipe {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0; 
+}
+
+.linha_equipe img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text-equipe h1 {
+    font-size: 24px;
+    line-height: 1.3; 
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.text-conheca {
+    color: black;
+    font-weight: normal;
+}
+
+.text-tecnologia {
+    background: linear-gradient(135deg, #A718A1, #5F2278);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-usadas {
+    color: black;
+    font-weight: bold;
+}
+
+.text-nossa {
+    color: black;
+    font-weight: normal;
+}
