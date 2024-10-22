@@ -8,7 +8,7 @@
 .empresa-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 50px 20px;
     background-color: var(--maincolor);
     position: relative;
 }
@@ -16,19 +16,19 @@
 .section-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha os itens à esquerda antes da linha2 */
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 100%;
     margin: 20px 0;
 }
 
 .text-content {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
 }
 
 .text-content.direita {
-    align-self: flex-end; /* Alinha a parte após a linha2 à direita */
-    text-align: right; /* Alinha o texto à direita */
+    align-self: flex-end;
+    text-align: right; 
 }
 
 .text-content h2 {

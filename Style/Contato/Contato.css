@@ -1,61 +1,76 @@
-:root{
+:root {
     --maincolor: #FFF;
     --descricao: #748296;
     --link: #e94f89;
 }
 
-.button{
-    width: 100%;
-    border-width: 2px;
-    border-radius: 5em;
-    margin-bottom: 10px;
-    background-color: purple;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.Contato-container{
+.Contato-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--maincolor);
+    padding: 20px;
+    box-sizing: border-box;
     position: relative;
-    margin: 20px ;
 }
-.estrela img{
-    position:absolute;
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: 100px; /* Mantém a proporção da imagem */
 
-    
+.button {
+    width: 100%;
+    max-width: 320px;
+    border-width: 2px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-.text{
+
+.estrela_contact {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 80px;
+    height: auto;
+}
+
+.estrela_contact img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
     padding-top: 1em;
-    font-size: 14px;
+    font-size: 0.9rem;
     text-align: center;
     color: var(--descricao);
-    max-width: 280px;
-    text-align: justify; /* Justifica o texto */
-    line-height: 2;
+    max-width: 90%;
+    line-height: 1.5;
     margin-bottom: 25px;
 }
-.titulo, .txtContato, .titulo2{
-    font-size: 20px;
-    text-align: left;
-    margin-top: 80px;
+
+.titulo, .txtContato, .titulo2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
 }
-.titulo2, .txtContato{
+
+.titulo2, .txtContato {
     font-weight: bold;
-
 }
-.txtContato{
+
+.txtContato {
     color: #A718A1;
-
 }
-.img_git{
+
+.img_git {
     width: 20px;
     height: 20px;
 }

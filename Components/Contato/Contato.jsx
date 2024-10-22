@@ -1,22 +1,21 @@
-//*import '../../Style/Contato/Contato.css';
-import estrela from '../../src/assets/estrela.png';
-import git from '../../src/assests_contato/github.png';
-import facebook from '../../src/assests_contato/facebook.png';
-import instagram from '../../src/assests_contato/insta.png';
-import linkedin from '../../src/assests_contato/linkedin.png';
-import email from '../../src/assests_contato/mail.png';
+import '../../Style/Contato/Contato.css';
+import estrela_contact from '../../src/assets/estrela.png';
+import git from '../../src/assets/github_contact.png';
+import facebook from '../../src/assets/facebook_contact.png';
+import instagram from '../../src/assets/instagram_contact.png';
+import linkedin from '../../src/assets/linkedin_contact.png';
+import email from '../../src/assets/mail_contact.png';
 
 export default function Contato() {
     return (
         <section className="Contato-container">
 
-            <div className='estrela'>
-                <img src={estrela} alt="estrela"/>
+            <div className='estrela_contact'>
+                <img src={estrela_contact} alt="estrela"/>
             </div>
             <span className='titulo'>Entre em <span className='txtContato'>Contato</span><span className='titulo2'> Conosco</span></span>
 
             <p className='text'>Tem alguma sugestão, crítica construtiva, requisição ou algo assim? Entre em contato e nos informe sobre!</p>
-            
 
             <button className='button' style={{backgroundColor: '#D115D4'}}>
                 <img src={git} alt='img_git' className='img_git'/>
