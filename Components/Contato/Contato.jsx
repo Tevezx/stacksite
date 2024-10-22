@@ -9,7 +9,6 @@ import email from '../../src/assets/mail_contact.png';
 export default function Contato() {
     return (
         <section className="Contato-container">
-
             <div className='estrela_contact'>
                 <img src={estrela_contact} alt="estrela"/>
             </div>

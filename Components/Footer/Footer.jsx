@@ -4,6 +4,7 @@ import linkedln from '../../src/assets/linkedin.png';
 import instagram from '../../src/assets/instagram.png';
 import facebook from '../../src/assets/facebook.png';
 import github from '../../src/assets/github.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer(){
     return(
@@ -17,17 +18,17 @@ export default function Footer(){
                 <div className="nav-bar">
                     <span className="titulo_link">Links</span>
                     <ul className="lista">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre nossa empresa</a></li>
-                        <li><a href="#">Nossa equipe</a></li>
-                        <li><a href="#">Soluções</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><Link to="/stacksite">Home</Link></li>
+                        <li><Link to="/empresa">Sobre nossa empresa</Link></li>
+                        <li><Link href="#equipe">Nossa equipe</Link></li>
+                        <li><Link href="#">Soluções</Link></li>
+                        <li><Link to="/contato">Contato</Link></li>
                     </ul>
                 </div>
                 <div className="footer-contact">
-                    <span className="contact">Contact us</span>
+                    <span className="contact">Fale Conosco</span>
                     <p className='duvida'>
-                        Qualquer dúvida, por favor entre em contato conosco via E-mail
+                        Qualquer dúvida, por favor entre em contato conosco via E-mail.
                     </p>
                 </div>
                 <div className="footer-social">

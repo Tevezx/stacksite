@@ -12,10 +12,9 @@ export default function Home() {
                 <img src={estrela} alt="estrela"/>
             </div>
             <div className='logo_home'>
-                <img src={logo_home} alt='home'/>
-                <p className='descricao_logo'>Lorem Ipsumis simply dummy text of the printing and typesetting industry.</p>
-                <Link to="/empresa">Saiba Mais ➜</Link>
+                <img src={logo_home} alt='home'/>     
             </div> 
+            <Link className='saibamais' to="/empresa">Saiba Mais ➜</Link>
             <div className='estrela2'>
                 <img src={estrela_pequena} alt='estrela2'/>
             </div>

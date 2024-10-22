@@ -17,10 +17,10 @@ export default function Empresa() {
                         <span className="empresa-gradient"> Empresa</span>
                     </h1>
                     <p>
-                        Escolhemos o nome Stack para refletir os valores de nossa equipe, 
+                        O nome "Stack" foi escolhido para refletir os valores de nossa equipe, 
                         simbolizando a acumulação de soluções e conhecimentos. A nossa missão é 
                         proporcionar os mais diversos softwares que atendam e satisfaçam as necessidades 
-                        do usuário, tornando algumas tarefas do cotidiano mais simples.
+                        do usuário, tornando algumas tarefas do cotidiano mais simples!
                     </p>
                 </div>
                 <div className="image-content">

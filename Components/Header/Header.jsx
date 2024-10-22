@@ -15,7 +15,7 @@ export default function Header() {
         <header>
             <nav className='navbar'>
                 <div className="logo-container">
-                    <img className='logo' src={logotipo} alt='Logo' />
+                    <Link to="/stacksite"><img className='logo' src={logotipo} alt='Logo' /></Link>
                 </div>
                 <div className="menu-toggle-container">
                     <button className='menu-toggle' onClick={toggleMenu}>
@@ -26,7 +26,7 @@ export default function Header() {
                     <div className='menu'>
                         <Link to="/stacksite" onClick={toggleMenu}>Home</Link>
                         <Link to="/empresa" onClick={toggleMenu}>Sobre Nossa Empresa</Link>
-                        <Link to="/nossa-equipe" onClick={toggleMenu}>Nossa Equipe</Link>
+                        <Link to="/equipe" onClick={toggleMenu}>Nossa Equipe</Link>
                         <Link to="/solucoes" onClick={toggleMenu}>Soluções</Link>
                         <Link to="/contato" onClick={toggleMenu}>Contato</Link>
                     </div>
