@@ -8,7 +8,7 @@ import Equipe from '../Components/Equipe/Equipe';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/stacksite">
       <Header />
       <Routes>
         <Route path="/stacksite" element={<Home />} />

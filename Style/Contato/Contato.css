@@ -6,7 +6,7 @@
 
 .Contato-container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,11 +33,12 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    
 }
 
 .estrela_contact {
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 5%;
     width: 80px;
     height: auto;
@@ -46,6 +47,11 @@
 .estrela_contact img {
     width: 100%;
     height: auto;
+}
+
+.estrela_contact2 {
+    position: relative;
+    right: 50%;
 }
 
 .text {
@@ -61,7 +67,7 @@
 .titulo, .txtContato, .titulo2 {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .titulo2, .txtContato {
@@ -76,3 +82,35 @@
     width: 20px;
     height: 20px;
 }
+.btn_link{
+    width: 100%;
+    max-width: 320px
+}
+.img_ilustracao img{
+    max-width: 100%;
+    
+}
+.img_ilustracao{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 1rem;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 1.10em;
+}
+.img_ilustracao_transparente img{
+    max-width: 100%;
+    height: auto;
+}
+.img_ilustracao_transparente{
+ 
+    position: absolute;
+    top: 53.4em; 
+    width: 88vw;
+    
+}
+.line_decoration{
+    
+}
+
