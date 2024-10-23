@@ -18,7 +18,7 @@ export default function Footer(){
                 <div className="nav-bar">
                     <span className="titulo_link">Links</span>
                     <ul className="lista">
-                        <li><Link to="/stacksite">Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/empresa">Sobre nossa empresa</Link></li>
                         <li><Link href="#equipe">Nossa equipe</Link></li>
                         <li><Link href="#">Soluções</Link></li>

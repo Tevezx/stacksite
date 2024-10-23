@@ -12,7 +12,7 @@ function App() {
     <Router basename="/stacksite">
       <Header />
       <Routes>
-        <Route path="/stacksite" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/empresa" element={<Empresa />} />
         <Route path="/equipe" element={<Equipe />} />
         <Route path="/solucoes" element={<Solucoes/>} />

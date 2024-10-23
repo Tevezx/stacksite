@@ -24,7 +24,7 @@ export default function Header() {
                 </div>
                 {isOpen && (
                     <div className='menu'>
-                        <Link to="/stacksite" onClick={toggleMenu}>Home</Link>
+                        <Link to="/" onClick={toggleMenu}>Home</Link>
                         <Link to="/empresa" onClick={toggleMenu}>Sobre Nossa Empresa</Link>
                         <Link to="/equipe" onClick={toggleMenu}>Nossa Equipe</Link>
                         <Link to="/solucoes" onClick={toggleMenu}>Soluções</Link>
