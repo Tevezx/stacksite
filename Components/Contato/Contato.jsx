@@ -25,35 +25,35 @@ export default function Contato() {
             <p className='text'>Tem alguma sugestão, crítica construtiva, requisição ou algo assim? Entre em contato e nos informe sobre!</p>
 
 
-            <a className='btn_link' href='https://github.com/StackCorp'>
+            <a className='btn_link' href='https://github.com/StackCorp' target="_blank">
                 <button className='button' style={{backgroundColor: '#D115D4'}}>
                     <img src={git} alt='img_git' className='img_git'/>
                     Git-Hub
                 </button>            
             </a>
 
-            <a className='btn_link' href='https://www.linkedin.com/in/stack-inova%C3%A7%C3%A3o-009557311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
+            <a className='btn_link' href='https://www.linkedin.com/in/stack-inova%C3%A7%C3%A3o-009557311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank">
                 <button className='button' style={{backgroundColor: '#B719DA'}}>
                     <img src={linkedin} alt='img_linkedin' className='img_linkedin'/>
                     Linkedin
                 </button>            
             </a>
 
-            <a className='btn_link' href='https://web.facebook.com/people/Stack-Corp/pfbid02NgtgG1J6f8F7qGcKFoirep6gQqDzQoBdvuU29qz4Nnc14W9xEaTXBCJMT4iWGHPBl/?sfnsn=wiwspwa&mibextid=RUbZ1f'>
+            <a className='btn_link' target="_blank" href='https://web.facebook.com/people/Stack-Corp/pfbid02NgtgG1J6f8F7qGcKFoirep6gQqDzQoBdvuU29qz4Nnc14W9xEaTXBCJMT4iWGHPBl/?sfnsn=wiwspwa&mibextid=RUbZ1f'>
                 <button className='button' style={{backgroundColor: '#9123D8'}}>
                     <img src={facebook} alt='img_facebook' className='img_facebook'/>
                     Facebook
                 </button>
             </a>
 
-            <a className='btn_link' href='https://www.instagram.com/stack_corp'>            
+            <a className='btn_link' href='https://www.instagram.com/stack_corp' target="_blank">            
                 <button className='button' style={{backgroundColor: '#7B2AD8'}}>
                     <img src={instagram} alt='img_instagram' className='img_instagram'/>
                     Instagram
                 </button>   
             </a>
 
-            <a className='btn_link' href='mailto:stackinovacao@gmail.com'>         
+            <a className='btn_link' href='mailto:stackinovacao@gmail.com' target="_blank">         
                 <button className='button' style={{backgroundColor: '#5122BC'}}>
                     <img src={email} alt='img_email' className='img_email'/>
                     stackinovacao@gmail.com

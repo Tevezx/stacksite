@@ -12,6 +12,7 @@
     justify-content: center;
     background-color: var(--maincolor);
     padding: 20px;
+    padding-top: 0%;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -29,9 +30,71 @@
     text-align: left;
     align-self: flex-start; /* Alinha o elemento ao início (esquerda) */
 }
-
-
 .txtSolucao{
-    color: #A718A1;
+    background: linear-gradient(to right, #A718A1, #5F2278); /* Exemplo de gradiente */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Para que o texto fique transparente */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
     font-weight: bold;
+}
+.titulo, .txtSolucao{
+    margin-bottom: 20px;
+}
+.linha_solucoes img{
+    width: 70px;
+}
+.titulo2{
+    font-size: 24px;
+}
+.txt_nossas_solucoes{
+    background: linear-gradient(to right, #A718A1, #5F2278); /* Exemplo de gradiente */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Para que o texto fique transparente */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+
+}
+.img_telas_app{
+    width: 100%;
+    height: auto;
+}
+.linha_solucoes1{
+    padding-top: 20px;
+    align-self: flex-start;
+}
+.linha_solucoes{
+    margin-top: 50px;
+}
+.titulo2, .txt_nossas_solucoes{
+    margin-top: 30px;
+}
+.img_telas_app{
+    margin-top: 20px;
+}
+.titulo3{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.descricao_mgp{
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 13px;
+    font-family: inter;
+    color: var(--descricao);
+}
+.btn_link{
+    background: linear-gradient(to right, #A718A1, #5F2278); /* Exemplo de gradiente */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Para que o texto fique transparente */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: right;
+}
+.emBreve{
+    color: var(--descricao);
+    font-size: 13px;
+    padding-bottom: 20px;
+    margin-top: 20px;
 }
