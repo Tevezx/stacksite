@@ -4,6 +4,7 @@
     --link: #e94f89;
     --black: black;
 }
+
 .Solucao-container{
     width: 100vw;
     min-height: 100vh;    
@@ -18,19 +19,23 @@
     position: relative;
     overflow: hidden;
 }
+
 .textInicial{
-    line-height: 2;
+    line-height: 1.7;
     font-size: 14px;
     color: var(--descricao);
     word-spacing: 5px;
 }
-.titulo_solucoes {
+
+.titulo_solucoes1 {
     font-size: 24px;
     color: var(--black);
     font-weight: bold;
     text-align: left;
     align-self: flex-start; 
+    margin-top: 20px;
 }
+
 .txtSolucao{
     background: linear-gradient(to right, #A718A1, #5F2278); 
     -webkit-background-clip: text;
@@ -55,24 +60,32 @@
     -webkit-text-fill-color: transparent; 
     font-size: 24px;
 }
+
 .img_telas_app{
     width: 100%;
     height: auto;
 }
-.linha_solucoes1{
-    padding-top: 20px;
-    align-self: flex-start;
+
+.linha_solucoes1 {
+    margin-top: 70px;
+    margin-left: 0;
+    width: auto; 
 }
-.linha_solucoes{
+
+.linha_solucoes {
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
+
 .titulo2_solucoes, .txt_nossas_solucoes{
     margin-top: 30px;
 }
 .img_telas_app{
     margin-top: 20px;
 }
-.titulo3{
+.titulo_mgp{
+    color: var(--black);
     font-weight: bold;
     font-size: 22px;
     margin-top: 20px;
