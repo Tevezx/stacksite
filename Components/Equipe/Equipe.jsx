@@ -5,20 +5,73 @@ import node from '../../src/assets/node.png';
 import css from '../../src/assets/css.png'; 
 import sql from '../../src/assets/sql.png'; 
 import react from '../../src/assets/react.png';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-const images = [
-    { src: javascript },
-    { src: node },
-    { src: css },
-    { src: sql },
-    { src: react },
-];
+import { useState, useRef } from 'react';
 
 export default function Equipe() {
+    const images = [javascript, node, css, sql, react];
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [startX, setStartX] = useState(0);
+    const [isDragging, setIsDragging] = useState(false);
+    const carouselRef = useRef(null);
+
+    const nextSlide = () => {
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % 2);
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide((prevSlide) => (prevSlide - 1 + 2) % 2);
+    };
+
+    const groupedImages = [
+        images.slice(0, 3),
+        images.slice(3)
+    ];
+
+    const handleTouchStart = (e) => {
+        setStartX(e.touches[0].clientX);
+        setIsDragging(true);
+    };
+
+    const handleTouchMove = (e) => {
+        if (!isDragging) return;
+        const currentX = e.touches[0].clientX;
+        const diffX = startX - currentX;
+        if (diffX > 50) {
+            nextSlide();
+            setIsDragging(false);
+        } else if (diffX < -50) {
+            prevSlide();
+            setIsDragging(false);
+        }
+    };
+
+    const handleTouchEnd = () => {
+        setIsDragging(false);
+    };
+
+    
+    const handleMouseDown = (e) => {
+        setStartX(e.clientX);
+        setIsDragging(true);
+    };
+
+    const handleMouseMove = (e) => {
+        if (!isDragging) return;
+        const currentX = e.clientX;
+        const diffX = startX - currentX;
+        if (diffX > 50) {
+            nextSlide();
+            setIsDragging(false);
+        } else if (diffX < -50) {
+            prevSlide();
+            setIsDragging(false);
+        }
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
+
     return (
         <section className="equipe-container">
             <div className="section-equipe">
@@ -33,19 +86,34 @@ export default function Equipe() {
                         <span className="text-nossa"> pela nossa equipe</span>
                     </h1>
                 </div>
-                <div className='Swiper'>
-                    <Swiper
-                        modules={[Mousewheel, Pagination]}
-                        slidesPerView={3}
-                        spaceBetween={20}
-                        pagination={{ clickable: true }}
-                    >
-                        {images.map((image, index) => (
-                            <SwiperSlide key={index}>
-                                <img className='image_slides' src={image.src} alt={`Technology ${index}`} />
-                            </SwiperSlide>
+                <div
+                    className="carousel-container"
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                    onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}
+                    ref={carouselRef}
+                >
+                    <div className="carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                        {groupedImages.map((group, slideIndex) => (
+                            <div className="carousel-slide" key={slideIndex}>
+                                {group.map((image, index) => (
+                                    <img src={image} alt={`Slide ${slideIndex + 1} - Imagem ${index + 1}`} key={index} />
+                                ))}
+                            </div>
                         ))}
-                    </Swiper>
+                    </div>
+                    <div className="carousel-dots">
+                        {groupedImages.map((_, dotIndex) => (
+                            <div
+                                key={dotIndex}
+                                className={`dot ${dotIndex === currentSlide ? 'active' : ''}`}
+                                onClick={() => setCurrentSlide(dotIndex)} 
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
