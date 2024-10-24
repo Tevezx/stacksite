@@ -2,6 +2,7 @@
     --maincolor: #FFF;
     --descricao: #748296;
     --link: #e94f89;
+    --black: black;
 }
 
 .Contato-container {
@@ -25,15 +26,14 @@
     border-radius: 50px;
     margin-bottom: 10px;
     background-color: purple;
-    color: white;
+    color: var(--maincolor);
     font-size: 1rem;
     font-weight: bold;
     padding: 12px 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
 }
 
 .estrela_contact {
@@ -64,13 +64,18 @@
     margin-bottom: 25px;
 }
 
-.titulo, .txtContato, .titulo2 {
+.titulo_contact{
+    color: var(--black);
+    font-weight: bold;
+}
+
+.titulo_contact, .txtContato, .titulo2_contact {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 80px;
 }
 
-.titulo2, .txtContato {
+.titulo2_contact, .txtContato {
     font-weight: bold;
 }
 
@@ -88,8 +93,8 @@
 }
 .img_ilustracao img{
     max-width: 100%;
-    
 }
+
 .img_ilustracao{
     display: flex; 
     align-items: center;
@@ -104,7 +109,6 @@
     height: auto;
 }
 .img_ilustracao_transparente{
- 
     position: absolute;
     top: 53.4em; 
     width: 88vw;

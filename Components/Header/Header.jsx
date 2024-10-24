@@ -32,7 +32,6 @@ export default function Header() {
                     </div>
                 )}
             </nav>
-            <div className="gradient-background"></div> {/* Gradiente aqui */}
         </header>
     );
 }

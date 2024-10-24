@@ -2,6 +2,7 @@
     --maincolor: #FFF;
     --descricao: #748296;
     --link: #e94f89;
+    --black: black;
 }
 .Solucao-container{
     width: 100vw;
@@ -18,40 +19,41 @@
     overflow: hidden;
 }
 .textInicial{
-    
     line-height: 2;
     font-size: 14px;
     color: var(--descricao);
     word-spacing: 5px;
 }
-.titulo {
+.titulo_solucoes {
     font-size: 24px;
-    color: #1A202C;
+    color: var(--black);
+    font-weight: bold;
     text-align: left;
-    align-self: flex-start; /* Alinha o elemento ao início (esquerda) */
+    align-self: flex-start; 
 }
 .txtSolucao{
-    background: linear-gradient(to right, #A718A1, #5F2278); /* Exemplo de gradiente */
+    background: linear-gradient(to right, #A718A1, #5F2278); 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Para que o texto fique transparente */
-    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
     font-weight: bold;
 }
-.titulo, .txtSolucao{
+.titulo_solucoes, .txtSolucao{
     margin-bottom: 20px;
 }
 .linha_solucoes img{
     width: 70px;
 }
-.titulo2{
+.titulo2_solucoes{
     font-size: 24px;
+    font-weight: bold;
+    color: var(--black);
 }
 .txt_nossas_solucoes{
-    background: linear-gradient(to right, #A718A1, #5F2278); /* Exemplo de gradiente */
+    background: linear-gradient(to right, #A718A1, #5F2278); 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Para que o texto fique transparente */
-    font-size: 24px; /* Ajuste o tamanho conforme necessário */
-
+    -webkit-text-fill-color: transparent; 
+    font-size: 24px;
 }
 .img_telas_app{
     width: 100%;
@@ -64,7 +66,7 @@
 .linha_solucoes{
     margin-top: 50px;
 }
-.titulo2, .txt_nossas_solucoes{
+.titulo2_solucoes, .txt_nossas_solucoes{
     margin-top: 30px;
 }
 .img_telas_app{
@@ -84,10 +86,10 @@
     color: var(--descricao);
 }
 .btn_link{
-    background: linear-gradient(to right, #A718A1, #5F2278); /* Exemplo de gradiente */
+    background: linear-gradient(to right, #A718A1, #5F2278);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Para que o texto fique transparente */
-    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    -webkit-text-fill-color: transparent; 
+    font-size: 24px; 
     font-weight: bold;
     padding-top: 15px;
     text-align: right;

@@ -81,12 +81,3 @@ body {
     background-color: var(--main-color);
     color: var(--roxo);
 }
-.gradient-background {
-    background: linear-gradient(to bottom, rgba(122, 121, 121, 0.13), rgba(197, 196, 196, 0)); /* Gradiente com transparência */
-    height: 30px; /* Ajuste a altura conforme necessário */
-    width: 100%; /* Para preencher toda a largura da página */
-    position: relative; /* Mantenha relative ou absolute conforme necessário */
-    z-index: -1; /* Para que fique atrás do navbar */
-    margin-top: 60px;
-
-}

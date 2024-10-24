@@ -20,7 +20,7 @@ export default function Contato() {
             <div className='line_decoration'>
                 <img src={line_decoration} alt='linha decoracao'></img>
             </div>
-            <span className='titulo'>Entre em <span className='txtContato'>Contato</span><span className='titulo2'> Conosco</span></span>
+            <span className='titulo_contact'>Entre em <span className='txtContato'>Contato</span><span className='titulo2_contact'> Conosco</span></span>
 
             <p className='text'>Tem alguma sugestão, crítica construtiva, requisição ou algo assim? Entre em contato e nos informe sobre!</p>
 
