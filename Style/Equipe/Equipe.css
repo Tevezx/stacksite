@@ -1,7 +1,7 @@
 :root {
     --maincolor: #FFF;
     --subcolor: black;
-    --roxo: #e94f89;
+    --roxo: #5F2278;
     --descricao: #748296;
 }
 
@@ -146,7 +146,7 @@
     position: relative; 
 }
 
-.team-slide{
+.team-slide {
     margin-top: 30px;
 }
 
@@ -175,10 +175,19 @@
     cursor: pointer;
     padding: 10px;
     transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.carousel-button:focus {
+    outline: none;
 }
 
 .carousel-button:hover {
     background-color: rgba(233, 79, 137, 0.2);
+}
+
+.carousel-button:active {
+    background-color: transparent; 
 }
 
 .carousel-dots-team {
@@ -290,4 +299,3 @@
 .info-description a:hover {
     text-decoration: underline;
 }
-

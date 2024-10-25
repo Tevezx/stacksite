@@ -1,7 +1,7 @@
 :root {
     --maincolor: #FFF;
     --descricao: #748296;
-    --link: #e94f89;
+    --link: #5F2278;
     --black: black;
 }
 
@@ -38,7 +38,7 @@
 
 .star-icon {
     position: absolute;
-    top: 10%;
+    top: 7%;
     right: 5%;
     width: 80px;
     height: auto;
@@ -72,7 +72,7 @@
 .contact-title, .contact-highlight, .contact-subtitle {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .contact-subtitle, .contact-highlight {
@@ -101,7 +101,7 @@
     display: flex; 
     align-items: center;
     justify-content: center; 
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     z-index: 1;
     position: relative;
     margin-bottom: 1.10em;
