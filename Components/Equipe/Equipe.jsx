@@ -5,21 +5,50 @@ import node from '../../src/assets/node.png';
 import css from '../../src/assets/css.png'; 
 import sql from '../../src/assets/sql.png'; 
 import react from '../../src/assets/react.png';
+import ana from '../../src/assets/ana.png';
+import carlos from '../../src/assets/carlos.png';
+import davi from '../../src/assets/davi.png';
+import eduardo from '../../src/assets/eduardo.png';
+import gabriela from '../../src/assets/gabriela.png';
+import endy from '../../src/assets/endy.png';
+import miguel from '../../src/assets/miguel.png';
 import { useState, useRef } from 'react';
+import btn_left from '../../src/assets/btn_left.png';
+import btn_right from '../../src/assets/btn_right.png';
+
+const images = [javascript, node, css, sql, react];
+
+const teamMembers = [
+    { name: "Ana", image: ana, description: "Desenvolvedora Front-end" },
+    { name: "Carlos", image: carlos, description: "Desenvolvedor Back-end" },
+    { name: "Davi", image: davi, description: "Especialista em UX/UI" },
+    { name: "Eduardo", image: eduardo, description: "Engenheiro de Dados" },
+    { name: "Gabriela", image: gabriela, description: "Analista de Sistemas" },
+    { name: "Endy", image: endy, description: "Gerente de Projetos" },
+    { name: "Miguel", image: miguel, description: "Desenvolvedor Full Stack" },
+];
 
 export default function Equipe() {
-    const images = [javascript, node, css, sql, react];
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentTechSlide, setCurrentTechSlide] = useState(0);
+    const [currentTeamSlide, setCurrentTeamSlide] = useState(0);
+    const techCarouselRef = useRef(null);
     const [startX, setStartX] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
-    const carouselRef = useRef(null);
 
-    const nextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % 2);
+    const nextTechSlide = () => {
+        setCurrentTechSlide((prevSlide) => (prevSlide + 1) % Math.ceil(images.length / 3));
     };
 
-    const prevSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide - 1 + 2) % 2);
+    const prevTechSlide = () => {
+        setCurrentTechSlide((prevSlide) => (prevSlide - 1 + Math.ceil(images.length / 3)) % Math.ceil(images.length / 3));
+    };
+
+    const nextTeamSlide = () => {
+        setCurrentTeamSlide((prevSlide) => (prevSlide + 1) % teamMembers.length);
+    };
+
+    const prevTeamSlide = () => {
+        setCurrentTeamSlide((prevSlide) => (prevSlide - 1 + teamMembers.length) % teamMembers.length);
     };
 
     const groupedImages = [
@@ -27,55 +56,32 @@ export default function Equipe() {
         images.slice(3)
     ];
 
-    const handleTouchStart = (e) => {
+    const handleTouchStartTech = (e) => {
         setStartX(e.touches[0].clientX);
         setIsDragging(true);
     };
 
-    const handleTouchMove = (e) => {
+    const handleTouchMoveTech = (e) => {
         if (!isDragging) return;
         const currentX = e.touches[0].clientX;
         const diffX = startX - currentX;
         if (diffX > 50) {
-            nextSlide();
+            nextTechSlide();
             setIsDragging(false);
         } else if (diffX < -50) {
-            prevSlide();
+            prevTechSlide();
             setIsDragging(false);
         }
     };
 
-    const handleTouchEnd = () => {
-        setIsDragging(false);
-    };
-
-    
-    const handleMouseDown = (e) => {
-        setStartX(e.clientX);
-        setIsDragging(true);
-    };
-
-    const handleMouseMove = (e) => {
-        if (!isDragging) return;
-        const currentX = e.clientX;
-        const diffX = startX - currentX;
-        if (diffX > 50) {
-            nextSlide();
-            setIsDragging(false);
-        } else if (diffX < -50) {
-            prevSlide();
-            setIsDragging(false);
-        }
-    };
-
-    const handleMouseUp = () => {
+    const handleTouchEndTech = () => {
         setIsDragging(false);
     };
 
     return (
         <section className="equipe-container">
             <div className="section-equipe">
-                <div className="linha_equipe">
+                <div className="linha-equipe">
                     <img src={linha} alt="Linha decorativa no topo" />
                 </div>
                 <div className="text-equipe">
@@ -88,15 +94,12 @@ export default function Equipe() {
                 </div>
                 <div
                     className="carousel-container"
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
-                    onMouseDown={handleMouseDown}
-                    onMouseMove={handleMouseMove}
-                    onMouseUp={handleMouseUp}
-                    ref={carouselRef}
+                    onTouchStart={handleTouchStartTech}
+                    onTouchMove={handleTouchMoveTech}
+                    onTouchEnd={handleTouchEndTech}
+                    ref={techCarouselRef}
                 >
-                    <div className="carousel" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                    <div className="carousel" style={{ transform: `translateX(-${currentTechSlide * 100}%)` }}>
                         {groupedImages.map((group, slideIndex) => (
                             <div className="carousel-slide" key={slideIndex}>
                                 {group.map((image, index) => (
@@ -109,10 +112,40 @@ export default function Equipe() {
                         {groupedImages.map((_, dotIndex) => (
                             <div
                                 key={dotIndex}
-                                className={`dot ${dotIndex === currentSlide ? 'active' : ''}`}
-                                onClick={() => setCurrentSlide(dotIndex)} 
+                                className={`dot ${dotIndex === currentTechSlide ? 'active' : ''}`}
+                                onClick={() => setCurrentTechSlide(dotIndex)} 
                             />
                         ))}
+                    </div>
+                    <div className='conheca'>
+                        <span className='conhecanossa'>Conheça nossa</span>
+                        <span className='conheca-equipe'> Equipe</span>
+                    </div>
+                </div>
+
+                <div className="team-slide">
+                    <h2>Membros da Equipe</h2>
+                    <div className="carousel-container-team">
+                        <div className="carousel-slide-team">
+                            <div className="member-card">
+                                <img className="member-image" src={teamMembers[currentTeamSlide].image} alt={teamMembers[currentTeamSlide].name} />
+                                <h2 className='h2-membros'>{teamMembers[currentTeamSlide].name}</h2>
+                                <p className='desc-membros'>{teamMembers[currentTeamSlide].description}</p>
+                            </div>
+                        </div>
+                        <div className="carousel-controls-team">
+                            <button onClick={prevTeamSlide} className="carousel-button"><img src={btn_left} alt="Anterior" /></button>
+                            <button onClick={nextTeamSlide} className="carousel-button"><img src={btn_right} alt="Próximo" /></button>
+                        </div>
+                        <div className="carousel-dots-team">
+                            {teamMembers.map((_, dotIndex) => (
+                                <div
+                                    key={dotIndex}
+                                    className={`dot-team ${dotIndex === currentTeamSlide ? 'active' : ''}`}
+                                    onClick={() => setCurrentTeamSlide(dotIndex)} 
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
