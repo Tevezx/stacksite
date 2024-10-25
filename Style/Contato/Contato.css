@@ -5,7 +5,7 @@
     --black: black;
 }
 
-.Contato-container {
+.contact-section {
     width: 100vw;
     min-height: 100vh;    
     display: flex;
@@ -19,7 +19,7 @@
     overflow: hidden;
 }
 
-.button {
+.social-button {
     width: 100%;
     max-width: 320px;
     border-width: 2px;
@@ -36,7 +36,7 @@
     gap: 10px; 
 }
 
-.estrela_contact {
+.star-icon {
     position: absolute;
     top: 10%;
     right: 5%;
@@ -44,17 +44,17 @@
     height: auto;
 }
 
-.estrela_contact img {
+.star-icon img {
     width: 100%;
     height: auto;
 }
 
-.estrela_contact2 {
+.star-icon-small {
     position: relative;
     right: 50%;
 }
 
-.text {
+.contact-text {
     padding-top: 1em;
     font-size: 0.9rem;
     text-align: center;
@@ -64,38 +64,40 @@
     margin-bottom: 25px;
 }
 
-.titulo_contact{
+.contact-title {
     color: var(--black);
     font-weight: bold;
 }
 
-.titulo_contact, .txtContato, .titulo2_contact {
+.contact-title, .contact-highlight, .contact-subtitle {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 80px;
 }
 
-.titulo2_contact, .txtContato {
+.contact-subtitle, .contact-highlight {
     font-weight: bold;
 }
 
-.txtContato {
+.contact-highlight {
     color: #A718A1;
 }
 
-.img_git {
+.social-icon {
     width: 20px;
     height: 20px;
 }
-.btn_link{
+
+.social-link {
     width: 100%;
-    max-width: 320px
+    max-width: 320px;
 }
-.img_ilustracao img{
+
+.illustration img {
     max-width: 100%;
 }
 
-.img_ilustracao{
+.illustration {
     display: flex; 
     align-items: center;
     justify-content: center; 
@@ -104,15 +106,14 @@
     position: relative;
     margin-bottom: 1.10em;
 }
-.img_ilustracao_transparente img{
+
+.transparent-illustration img {
     max-width: 100%;
     height: auto;
 }
-.img_ilustracao_transparente{
+
+.transparent-illustration {
     position: absolute;
     top: 53.4em; 
     width: 88vw;
-    
 }
-
-

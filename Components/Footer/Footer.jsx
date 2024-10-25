@@ -20,7 +20,7 @@ export default function Footer(){
                     <ul className="lista">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/empresa">Sobre nossa empresa</Link></li>
-                        <li><Link href="#equipe">Nossa equipe</Link></li>
+                        <li><Link href="/equipe">Nossa equipe</Link></li>
                         <li><Link href="/solucoesç/mjlk">Soluções</Link></li>
                         <li><Link to="/contato">Contato</Link></li>
                     </ul>
