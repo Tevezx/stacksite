@@ -78,6 +78,28 @@ export default function Equipe() {
         setIsDragging(false);
     };
 
+    const handleMouseDownTech = (e) => {
+        setStartX(e.clientX);
+        setIsDragging(true);
+    };
+
+    const handleMouseMoveTech = (e) => {
+        if (!isDragging) return;
+        const currentX = e.clientX;
+        const diffX = startX - currentX;
+        if (diffX > 50) {
+            nextTechSlide();
+            setIsDragging(false);
+        } else if (diffX < -50) {
+            prevTechSlide();
+            setIsDragging(false);
+        }
+    };
+
+    const handleMouseUpTech = () => {
+        setIsDragging(false);
+    };
+
     return (
         <section className="equipe-container">
             <div className="section-equipe">
@@ -97,6 +119,10 @@ export default function Equipe() {
                     onTouchStart={handleTouchStartTech}
                     onTouchMove={handleTouchMoveTech}
                     onTouchEnd={handleTouchEndTech}
+                    onMouseDown={handleMouseDownTech}
+                    onMouseMove={handleMouseMoveTech}
+                    onMouseUp={handleMouseUpTech}
+                    onMouseLeave={handleMouseUpTech} // Para garantir que o slide pare se o mouse sair
                     ref={techCarouselRef}
                 >
                     <div className="carousel" style={{ transform: `translateX(-${currentTechSlide * 100}%)` }}>
