@@ -201,3 +201,93 @@
 .dot-team.active {
     background-color: var(--roxo);
 }
+
+.ferramentas_equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.linha_ferramentas {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.txt_ferramentas {
+    display: inline-block;
+}
+
+.txt_conhecaas, .ferramentas_utili, .utili_equipe {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.txt_conhecaas {
+    color: var(--subcolor);
+    font-weight: normal;
+}
+
+.ferramentas_utili {
+    background: linear-gradient(135deg, #A718A1, #5F2278);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.utili_equipe {
+    color: var(--subcolor);
+    font-weight: bold;
+}
+
+.info-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 600px;
+    margin: 16px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+}
+
+.info-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.info-text {
+    max-width: 450px;
+}
+
+.info-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #212121;
+}
+
+.info-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-description a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.info-description a:hover {
+    text-decoration: underline;
+}
+
