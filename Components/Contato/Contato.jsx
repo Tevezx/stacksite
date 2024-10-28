@@ -20,9 +20,10 @@ export default function Contato() {
             </span>
 
             <p className='contact-text'>
-                Tem alguma sugestão, crítica construtiva, requisição ou algo assim? Entre em contato e nos informe sobre!
+            Tem alguma sugestão, crítica construtiva, requisição ou algo assim? Entre em contato e nos informe sobre!
             </p>
 
+            <div className='button-container'>
             <a className='social-link' href='https://github.com/StackCorp' target="_blank">
                 <button className='social-button' style={{ backgroundColor: '#D115D4' }}>
                     <img src={git} alt='img_git' className='social-icon' />
@@ -57,6 +58,7 @@ export default function Contato() {
                     stackinovacao@gmail.com
                 </button>
             </a>            
+            </div>
 
             <div className='star-icon-small'>
                 <img src={estrela_contact2} alt='estrela2' />

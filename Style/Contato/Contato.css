@@ -21,7 +21,6 @@
 
 .social-button {
     width: 100%;
-    max-width: 320px;
     border-width: 2px;
     border-radius: 50px;
     margin-bottom: 10px;
@@ -92,9 +91,16 @@
     width: 100%;
     max-width: 320px;
 }
+.button-container{
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .illustration img {
-    max-width: 100%;
+    max-width: 120%;
 }
 
 .illustration {
@@ -113,7 +119,104 @@
 }
 
 .transparent-illustration {
-    position: absolute;
-    top: 53.4em; 
+    position: absolute; 
     width: 88vw;
+}
+
+@media screen and (min-width:320px){
+    .transparent-illustration{
+        top: 57.7em;
+        width: 105%;
+    }
+}
+
+@media screen and (min-width:375px){
+    .transparent-illustration{
+        top: 58.2em;
+        width: 107%;
+    }
+}
+
+@media screen and (min-width:425px){
+    .transparent-illustration{
+        top: 59.4em;
+        width: 109%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .transparent-illustration{
+        top: 77.5em;
+        width: 100%;
+        left: 10px;
+    }
+    .contact-title, .contact-highlight, .contact-subtitle {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .contact-text{
+        font-size: 1.5rem;
+
+    }
+    .button-container{
+        max-width: 578px;
+    }
+    .social-link{
+        max-width: 578px;
+    }
+    .social-button{
+        font-size: 1.5rem;
+        
+    }
+    .social-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .illustration{
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .transparent-illustration{
+        left: 8.7em;
+    }
+    
+}
+
+@media screen and (min-width:1440px){
+    .transparent-illustration{
+        left: 1em;
+        align-self: flex-end;
+        bottom: 37.5em; 
+        margin-left: 39em;       
+    }
+    .contact-highlight, .contact-subtitle, .contact-title{
+        font-size: 5rem;
+    }
+    .button-container { 
+        align-self: flex-start; /* Alinha a button-container à esquerda */
+        position: relative;
+    }
+    .social-button {
+        margin-bottom: 40px;
+    }
+    .illustration{
+        align-self: flex-end;
+        bottom: 40em;        
+    }
+    .contact-highlight, .contact-subtitle, .contact-title, .contact-text{
+        align-self: flex-start;
+        font-size: 35px;
+    }
+    .contact-text{
+        max-width: 45%;
+        text-align: justify;     
+        font-size: 20px;   
+    }
+    .contact-section{
+        padding: 0px 50px 0px 50px;
+        
+    }    
 }
