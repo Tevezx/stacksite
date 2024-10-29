@@ -17,20 +17,27 @@ export default function Header() {
                 <div className="logo-container">
                     <Link to="/stacksite"><img className='logo' src={logotipo} alt='Logo' /></Link>
                 </div>
-                <div className="menu-toggle-container">
+                <div className='menu-toggle-container'>
                     <button className='menu-toggle' onClick={toggleMenu}>
-                        <img src={menuIcon} alt='Menu Icon'/>
+                        <img src={menuIcon} alt='Menu Icon' />
                     </button>
                 </div>
                 {isOpen && (
-                    <div className='menu'>
+                    <div className='mobile-menu'>
                         <Link to="/" onClick={toggleMenu}>Home</Link>
                         <Link to="/empresa" onClick={toggleMenu}>Sobre Nossa Empresa</Link>
                         <Link to="/equipe" onClick={toggleMenu}>Nossa Equipe</Link>
                         <Link to="/solucoes" onClick={toggleMenu}>Soluções</Link>
-                        <Link to="/contato" onClick={toggleMenu}>Contato</Link>
+                        <Link to="/contato" className="contato-mobile" onClick={toggleMenu}>Contato</Link>
                     </div>
                 )}
+                <div className='desktop-menu'>
+                    <Link to="/" className="link-desktop">Home</Link>
+                    <Link to="/empresa" className="link-desktop">Sobre Nossa Empresa</Link>
+                    <Link to="/equipe" className="link-desktop">Nossa Equipe</Link>
+                    <Link to="/solucoes" className="link-desktop">Soluções</Link>
+                    <Link to="/contato" className="contato-desktop">Contato</Link>
+                </div>
             </nav>
         </header>
     );
