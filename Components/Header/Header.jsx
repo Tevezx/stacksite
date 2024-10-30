@@ -15,7 +15,7 @@ export default function Header() {
         <header>
             <nav className='navbar'>
                 <div className="logo-container">
-                    <Link to="/stacksite"><img className='logo' src={logotipo} alt='Logo' /></Link>
+                    <Link to="/"><img className='logo' src={logotipo} alt='Logo' /></Link>
                 </div>
                 <div className='menu-toggle-container'>
                     <button className='menu-toggle' onClick={toggleMenu}>

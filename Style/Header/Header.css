@@ -14,6 +14,7 @@
 
 body {
     margin: 0;
+    background-color: var(--main-color);
 }
 
 .navbar {
@@ -28,10 +29,11 @@ body {
     top: 0;
     z-index: 1000;
     transition: margin-top 0.3s;
+    margin-top: 10px;
 }
 
 .logo-container {
-    flex: 1;
+    flex: 0 0 auto;
 }
 
 .logo {
@@ -40,9 +42,9 @@ body {
 }
 
 .menu-toggle-container {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; 
 }
 
 .menu-toggle {
@@ -82,11 +84,12 @@ body {
         position: absolute;
         background-color: var(--main-color);
         top: 60px;
-        left: 0;
+        right: 0; 
         width: 100vw;
         padding: 10px;
         z-index: 1001;
         animation: fadeIn 0.5s ease-in-out;
+        align-items: flex-end; 
     }
 
     .mobile-menu a {
@@ -95,6 +98,7 @@ body {
         color: var(--cinza-claro);
         border-radius: 4px;
         transition: color 0.3s ease-in-out;
+        width: 100%; 
     }
 
     .mobile-menu a:hover {
@@ -116,12 +120,10 @@ body {
 @media screen and (min-width: 1024px) {
     .navbar {
         padding: 1rem 2rem;
-        justify-content: center;
-        
     }
 
     .logo-container {
-        margin-right: 2rem;
+        margin-right: auto;
     }
 
     .logo {
@@ -135,7 +137,7 @@ body {
     .desktop-menu {
         display: flex; 
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 2rem;
         animation: slideIn 0.5s ease-in-out;
@@ -145,7 +147,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0px 20px;
+        padding: 0px 15px;
         color: var(--cinza-claro);
         font-size: 16px;
         transition: background-color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
@@ -184,23 +186,43 @@ body {
     }
 }
 
-    @media screen and (min-width: 1440px) {
-        .navbar {
-            padding: 1rem 3rem;
-            margin-top: 0px; 
-        }
-
-        .logo{
-            width: 50px;
-        }
-
-        .desktop-menu .link-desktop {
-            padding: 10px 30px;
-            font-size: 18px;
-        }
-
-        .contato-desktop {
-            font-size: 18px;
-            padding: 10px 50px;
-        }
+@media screen and (min-width: 1440px) {
+    .navbar {
+        padding: 1rem 3rem;
     }
+
+    .logo {
+        width: 50px;
+    }
+
+    .desktop-menu .link-desktop {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .contato-desktop {
+        font-size: 18px;
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .navbar {
+        padding: 1rem 4rem; 
+        margin-top: 20px; 
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .desktop-menu .link-desktop {
+        padding: 15px 40px; 
+        font-size: 22px;
+    }
+
+    .contato-desktop {
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+}
