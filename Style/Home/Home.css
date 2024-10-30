@@ -8,7 +8,7 @@
     background-color: var(--maincolor);
     position: relative;
     overflow: hidden;
-    margin: 0;
+    margin-top: 3vh;
 }
 
 .logo_home {
