@@ -8,7 +8,7 @@
     background-color: var(--maincolor);
     position: relative;
     overflow: hidden;
-    margin-top: 3vh;
+    margin-top: 3rem;
 }
 
 .logo_home {
@@ -70,7 +70,7 @@
 
 .estrela {
     transform: rotate(3deg);
-    top: 9%;
+    top: 5%;
     right: 5%;
 }
 
@@ -90,6 +90,7 @@
         padding: 4em 4em;
         align-items: center;
         justify-content: space-around;
+        margin-top: 4rem;
     }
 
     .logo_home {
@@ -163,6 +164,7 @@
 @media (min-width: 1440px) {
     .home-container {
         padding: 8em 8em;
+        margin-top: 8rem;
     }
 
     .logo_home img {
@@ -189,6 +191,7 @@
 @media (min-width: 2560px) {
     .home-container {
         padding: 12em 12em;
+        margin-top: 12rem;
     }
 
     .logo_home img {
