@@ -17,6 +17,7 @@
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    
 }
 
 .social-button {
@@ -187,9 +188,9 @@
 
 @media screen and (min-width:1440px){
     .transparent-illustration{
-        left: 1em;
+        left: 1.4em;
         align-self: flex-end;
-        bottom: 37.5em; 
+        bottom: 6em; 
         margin-left: 39em;       
     }
     .contact-highlight, .contact-subtitle, .contact-title{
@@ -204,7 +205,7 @@
     }
     .illustration{
         align-self: flex-end;
-        bottom: 40em;        
+        bottom: 39em;        
     }
     .contact-highlight, .contact-subtitle, .contact-title, .contact-text{
         align-self: flex-start;
@@ -218,5 +219,69 @@
     .contact-section{
         padding: 0px 50px 0px 50px;
         
-    }    
+    }   
+    .contact-section{
+        height: 110vh; /* Força a seção a ocupar a altura exata da tela */
+        justify-content: flex-start;
+        padding-left: 100px;
+    }
+    .star-icon {
+        top: 10em;
+        width: 100px;
+    } 
+}
+@media screen and (min-width: 2560px){
+    .contact-highlight, .contact-subtitle, .contact-title{
+        font-size: 5rem;
+        margin-top: 150px;
+    }   
+    .contact-text{
+        font-size: 3rem;
+    }
+    .button-container{
+        max-width: 70em;
+        width: 100%;
+        
+    }
+    .social-link {
+        width: 100%;
+        max-width: 70em;
+        
+    }
+    .social-icon{
+        width: 50px;
+        height: 50px;
+    }
+    .social-button{
+        font-size: 40px;
+        padding: 25px 0;
+        margin-bottom: 60px;
+    }
+    .star-icon {
+        width: 200px;
+        height: auto;
+    }
+    .contact-section{
+        height: 170vh; /* Força a seção a ocupar a altura exata da tela */
+        justify-content: flex-start;
+        padding-left: 100px;       
+    }
+    .illustration img{
+        width: 100%;
+    }
+    .illustration{
+        width: 1250px;
+        bottom: 64em;
+    }
+    .transparent-illustration img{
+        width: 100%; /* Define a largura total da imagem */
+        max-width: none; /* Remove limitações de largura máxima */
+        height: auto; /* Mantém a proporção */
+    }
+    .transparent-illustration{
+        margin-top: 80em;
+        margin-left: 77.6em;       
+        width: 49%;       
+    }
+    
 }
