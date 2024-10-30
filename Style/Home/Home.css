@@ -70,19 +70,20 @@
 
 .estrela {
     transform: rotate(3deg);
-    top: 3%;
-    right: 5%;
+    top: 5%;
+    right: 5%; 
 }
 
 .estrela2 {
     transform: rotate(3deg);
-    top: 43%;
+    top: 40%; 
     left: 5%;
 }
 
 .estrela3 {
     display: none;
 }
+
 
 @media (min-width: 1024px) {
     .home-container {
