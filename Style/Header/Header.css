@@ -29,7 +29,6 @@ body {
     top: 0;
     z-index: 1000;
     transition: margin-top 0.3s;
-    margin-top: 10px;
 }
 
 .logo-container {
