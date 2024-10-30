@@ -8,7 +8,7 @@
     background-color: var(--maincolor);
     position: relative;
     overflow: hidden;
-    margin-top: 55vh;
+    margin-top: 10vh;
 }
 
 .logo_home {
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 6rem;
     z-index: 1;
     position: relative;
 }
@@ -70,7 +70,7 @@
 
 .estrela {
     transform: rotate(3deg);
-    top: 5%;
+    top: 3%;
     right: 5%;
 }
 
