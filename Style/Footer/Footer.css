@@ -14,7 +14,7 @@
 
 footer {
     background: linear-gradient(to top, #5F2278, #A718A1);
-    width: 100%;
+    width: 100vw;
     padding: 2rem 1rem;
     margin-top: auto;
 }

@@ -5,6 +5,7 @@
     --black: black;
 }
 
+
 .contact-section {
     width: 100vw;
     min-height: 100vh;    
@@ -16,8 +17,6 @@
     padding: 20px;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
-    
 }
 
 .social-button {
@@ -146,11 +145,7 @@
 }
 
 @media screen and (min-width:768px){
-    .transparent-illustration{
-        top: 77.5em;
-        width: 100%;
-        left: 10px;
-    }
+    
     .contact-title, .contact-highlight, .contact-subtitle {
         font-size: 2rem;
         text-align: center;
@@ -179,20 +174,10 @@
     }
 }
 
-@media screen and (min-width:1024px){
-    .transparent-illustration{
-        left: 8.7em;
-    }
-    
-}
+
 
 @media screen and (min-width:1440px){
-    .transparent-illustration{
-        left: 1.4em;
-        align-self: flex-end;
-        bottom: 6em; 
-        margin-left: 39em;       
-    }
+    
     .contact-highlight, .contact-subtitle, .contact-title{
         font-size: 5rem;
     }
@@ -204,7 +189,7 @@
         margin-bottom: 40px;
     }
     .illustration{
-        align-self: flex-end;
+        left: 40em;
         bottom: 39em;        
     }
     .contact-highlight, .contact-subtitle, .contact-title, .contact-text{
@@ -216,18 +201,17 @@
         text-align: justify;     
         font-size: 20px;   
     }
-    .contact-section{
-        padding: 0px 50px 0px 50px;
-        
-    }   
+    
     .contact-section{
         height: 110vh; /* Força a seção a ocupar a altura exata da tela */
         justify-content: flex-start;
         padding-left: 100px;
+        width: 100vh;
     }
     .star-icon {
         top: 10em;
         width: 100px;
+        left: 90em;
     } 
 }
 @media screen and (min-width: 2560px){
@@ -273,15 +257,5 @@
         width: 1250px;
         bottom: 64em;
     }
-    .transparent-illustration img{
-        width: 100%; /* Define a largura total da imagem */
-        max-width: none; /* Remove limitações de largura máxima */
-        height: auto; /* Mantém a proporção */
-    }
-    .transparent-illustration{
-        margin-top: 80em;
-        margin-left: 77.6em;       
-        width: 49%;       
-    }
-    
+
 }

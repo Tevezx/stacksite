@@ -192,15 +192,16 @@ body {
 
         .logo{
             width: 50px;
+            padding-top: 10px;
         }
 
         .desktop-menu .link-desktop {
             padding: 10px 30px;
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .contato-desktop {
-            font-size: 18px;
+            font-size: 20px;
             padding: 10px 50px;
         }
     }

@@ -7,7 +7,7 @@ import instagram from '../../src/assets/instagram_contact.png';
 import linkedin from '../../src/assets/linkedin_contact.png';
 import email from '../../src/assets/mail_contact.png';
 import ilustracao from '../../src/assets/ilustracao_contact.png';
-import ilustracao_transparente from '../../src/assets/ilustracao_contact_transparente.png'; 
+
 
 export default function Contato() {
     return (
@@ -66,9 +66,6 @@ export default function Contato() {
 
             <div className='illustration'>
                 <img src={ilustracao} />
-            </div>
-            <div className='transparent-illustration'>
-                <img src={ilustracao_transparente} />
             </div>
         </section>
     );
