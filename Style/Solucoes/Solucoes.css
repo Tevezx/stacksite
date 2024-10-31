@@ -113,3 +113,43 @@
     padding-bottom: 20px;
     margin-top: 20px;
 }
+
+@media screen and (min-width: 1024px) {
+    .titulo_solucoes1, .txtSolucao, .titulo2_solucoes, .txt_nossas_solucoes{
+        font-size: 35px;
+    }
+    .textInicial{
+        font-size: 20px;
+        display: flex;
+    }
+    .linha_solucoes1{
+        align-self: self-start;
+        
+    }
+    .img_telas_app{
+        width: 500px;
+        height: 315px;
+        align-self: self-start;
+    }
+    .titulo_mgp, .descricao_mgp, .btn_link{
+        position: relative;
+        bottom: 14em;
+    }
+    .titulo_mgp{
+        left: 8.5em;
+    }
+    .descricao_mgp{
+        max-width: 40%;
+        left: 19em;
+        bottom: 23em;
+        line-height: 2;
+    }
+    .Solucao-container{
+        padding-left: 4em;
+        
+    }
+    .btn_link{
+        bottom: 19em;
+        left: 24em;
+    }
+}
