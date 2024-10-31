@@ -8,7 +8,7 @@
     background-color: var(--maincolor);
     position: relative;
     overflow: hidden;
-    margin-top: 10vh;
+    padding: 5vh 0;
 }
 
 .logo_home {
@@ -19,7 +19,7 @@
 }
 
 .logo_home img {
-    margin-top: 5vh;
+    margin-top: 0;
     width: 15.625rem;
     height: auto;
 }
@@ -83,7 +83,6 @@
 .estrela3 {
     display: none;
 }
-
 
 @media (min-width: 1024px) {
     .home-container {
@@ -158,64 +157,5 @@
         top: 80%;
         left: 35%;
         transform: scale(2) rotate(3deg);
-    }
-}
-
-@media (min-width: 1440px) {
-    .home-container {
-        padding: 8em 8em;
-    }
-
-    .logo_home img {
-        width: 25rem; 
-    }
-
-    .logo-description {
-        font-size: 1.2em;
-    }
-
-    .saibamais {
-        font-size: 1.1em;
-    }
-
-    .ilustração {
-        width: 40%;
-    }
-
-    .estrela, .estrela2, .estrela3 {
-        transform: scale(2.5) rotate(3deg);
-    }
-}
-
-@media (min-width: 2560px) {
-    .home-container {
-        padding: 12em 12em;
-    }
-
-    .logo_home img {
-        width: 30rem;
-    }
-
-    .logo-description {
-        font-size: 1.5em;
-    }
-
-    .saibamais {
-        font-size: 1.3em;
-    }
-
-    .ilustração {
-        width: 35%;
-    }
-
-    .estrela, .estrela2, .estrela3 {
-        transform: scale(3);
-    }
-
-    .estrela3 {
-        display: block;
-        top: 90%;
-        left: 30%;
-        transform: scale(3.5);
     }
 }
