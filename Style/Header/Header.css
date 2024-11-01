@@ -184,9 +184,27 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .navbar {
-        padding: 1rem 3rem;
+    @media screen and (min-width: 1440px) {
+        .navbar {
+            padding: 1rem 3rem;
+            margin-top: 0px; 
+        }
+
+        .logo{
+            width: 50px;
+            padding-top: 10px;
+        }
+
+        .desktop-menu .link-desktop {
+            padding: 10px 30px;
+            font-size: 20px;
+        }
+
+        .contato-desktop {
+            font-size: 20px;
+            padding: 10px 50px;
+        }
+
     }
 
     .logo {
