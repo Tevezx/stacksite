@@ -4,7 +4,6 @@ import fundo from '../../src/assets/fundo.png';
 import logo_home from '../../src/assets/logo_home.png';
 import estrela_pequena from '../../src/assets/estrela_pequena.png';
 import { Link } from 'react-router-dom';
-import degrade from '../../src/assets/degrade.png';
 
 export default function Home() {
     return (
@@ -24,9 +23,6 @@ export default function Home() {
             </div>
             <div className="ilustração">
                 <img src={fundo} alt="Fundo" />
-            </div>
-            <div className="degrade">
-                <img src={degrade} alt="Degradê" />
             </div>
             <div className="estrela3">
                 <img src={estrela} alt="Estrela 3" />
