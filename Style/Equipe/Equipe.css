@@ -5,6 +5,15 @@
     --descricao: #748296;
 }
 
+*{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .equipe-container {
     width: 100vw;
     min-height: 100vh; 

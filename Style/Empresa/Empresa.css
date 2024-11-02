@@ -5,18 +5,29 @@
     --descricao: #748296;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .empresa-container {
     display: flex;
     flex-direction: column;
     padding: 50px 20px;
     background-color: var(--maincolor);
     position: relative;
+    overflow: hidden;
 }
 
 .section-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; 
+    align-items: flex-start; 
     justify-content: space-between;
     max-width: 100%;
     margin: 20px 0;
@@ -28,13 +39,13 @@
 
 .text-content.direita {
     align-self: flex-end;
-    text-align: right; 
+    text-align: right;
 }
 
 .text-content h2 {
     color: var(--subcolor);
     font-size: 24px;
-    font-weight: normal; 
+    font-weight: normal;
 }
 
 .text-content h1 {
@@ -62,14 +73,21 @@
     margin-bottom: 20px;
 }
 
+.image-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
 .image-content img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 .linha img {
-    width: 70px; 
+    width: 70px;
     height: auto;
 }
 
@@ -77,3 +95,113 @@
     align-self: flex-end;
     text-align: right;
 }
+
+
+@media screen and (min-width: 768px) {
+    .image-content img {
+        max-height: 300px; 
+        width: auto; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .empresa-container {
+        padding-top: 100px; 
+    }
+
+    .section-content {
+        display: flex; 
+        justify-content: center; 
+    }
+
+    .text-content h2{
+        font-size: 30px;
+    }
+
+    .text-content h1{
+        font-size: 30px;
+    }
+
+    .text-content {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        margin: 0 30px; 
+    }
+
+    .section-content:first-child {
+        flex-direction: row-reverse; 
+    }
+
+    .section-content:last-child {
+        flex-direction: row;
+    }
+
+    .image-content.esquerda {
+        order: 2;
+    }
+
+    .text-content p{
+        font-size: 18px;
+    }
+
+    .text-content.direita{
+        margin-bottom: 5em;
+    }
+
+    .image-content img {
+        width: 100%;
+        max-height: 715px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1440px) {
+    .empresa-container {
+        padding-top: 120px;
+    }
+
+    .text-content h2{
+        font-size: 35px;
+    }
+
+    .text-content h1{
+        font-size: 35px;
+    }
+
+    .text-content p{
+        font-size: 20px;
+    }
+
+    .section-content {
+        margin: 30px 0; 
+    }
+
+    .image-content img {
+        max-height: 400px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .empresa-container {
+        padding-top: 140px;
+    }
+
+    .section-content {
+        margin: 40px 0;
+    }
+
+    .text-content {
+        margin: 0 60px;
+    }
+
+    .image-content img {
+        max-height: 500px;
+    }
+}
+
+
+
+
+
+

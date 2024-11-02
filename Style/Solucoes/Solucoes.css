@@ -5,6 +5,15 @@
     --black: black;
 }
 
+*{
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .Solucao-container{
     width: auto;
     min-height: 130vh;    
