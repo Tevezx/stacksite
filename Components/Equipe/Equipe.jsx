@@ -115,8 +115,7 @@ export default function Equipe() {
                 </div>
                 <div className="text-equipe">
                     <h1>
-                        <span className="text-conheca">Conheça as</span>
-                        <span className="text-tecnologia"> Tecnologias</span>
+                        <span className="text-tecnologia">Tecnologias</span>
                         <span className="text-usadas"> usadas</span>
                         <span className="text-nossa"> pela nossa equipe</span>
                     </h1>
@@ -157,7 +156,6 @@ export default function Equipe() {
                 </div>
 
                 <div className="team-slide">
-                    <h2>Membros da Equipe</h2>
                     <div className="carousel-container-team">
                         <div className="carousel-slide-team">
                             <div className="member-card">
@@ -184,83 +182,84 @@ export default function Equipe() {
                 <div className='ferramentas_equipe'>
                     <img src={linha} className='linha_ferramentas' alt="linha decorativa" />
                     <div className='txt_ferramentas'>
-                        <span className='txt_conhecaas'>Conheça as</span>
-                        <span className='ferramentas_utili'> ferramentas</span>
+                        <span className='ferramentas_utili'>Ferramentas</span>
                         <span className='utili_equipe'> utilizadas</span>
                     </div>
                 </div>
-                <div className="info-card">
-                    <div className="info-content">
-                        <img src={drive} alt="google drive logo" className="info-image"/>
-                        <div className="info-text">
-                            <h3 className="info-title">Google Cloud</h3>
-                            <p className="info-description">
-                                <p>O Google Cloud Platform é o mais completo software existente hoje no mercado, Com ele é possível desenvolver aplicativos personalizados, estabelecer programas de gerenciamento de Customer Relationship Management.</p>
-                            </p>
+                <div className="info-card-container">
+                    <div className="info-card">
+                        <div className="info-content">
+                            <img src={drive} alt="google drive logo" className="info-image"/>
+                            <div className="info-text">
+                                <h3 className="info-title">Google Cloud</h3>
+                                <p className="info-description">
+                                    <p>O Google Cloud Platform é o mais completo software existente hoje no mercado, Com ele é possível desenvolver aplicativos personalizados, estabelecer programas de gerenciamento de Customer Relationship Management.</p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="info-card">
-                    <div className="info-content">
-                        <img src={vs} alt="Visual Studio Code logo" className="info-image"/>
-                        <div className="info-text">
-                            <h3 className="info-title">Visual Studio Code</h3>
-                            <p className="info-description">
-                                <p>O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe.</p>
-                            </p>
+                    <div className="info-card">
+                        <div className="info-content">
+                            <img src={vs} alt="Visual Studio Code logo" className="info-image"/>
+                            <div className="info-text">
+                                <h3 className="info-title">Visual Studio Code</h3>
+                                <p className="info-description">
+                                    <p>O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe.</p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="info-card">
-                    <div className="info-content">
-                        <img src={docker} alt="Docker logo" className="info-image"/>
-                        <div className="info-text">
-                            <h3 className="info-title">Docker</h3>
-                            <p className="info-description">
-                                <p>Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres.</p>
-                            </p>
+                    <div className="info-card">
+                        <div className="info-content">
+                            <img src={docker} alt="Docker logo" className="info-image"/>
+                            <div className="info-text">
+                                <h3 className="info-title">Docker</h3>
+                                <p className="info-description">
+                                    <p>Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres.</p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="info-card">
-                    <div className="info-content">
-                        <img src={sql_img} alt="Sql logo" className="info-image"/>
-                        <div className="info-text">
-                            <h3 className="info-title">SQL Server</h3>
-                            <p className="info-description">
-                                <p>O Microsoft SQL Server é um sistema gerenciador de Banco de dados relacional desenvolvido pela Sybase em parceria com a Microsoft.</p>
-                            </p>
+                    <div className="info-card">
+                        <div className="info-content">
+                            <img src={sql_img} alt="Sql logo" className="info-image"/>
+                            <div className="info-text">
+                                <h3 className="info-title">SQL Server</h3>
+                                <p className="info-description">
+                                    <p>O Microsoft SQL Server é um sistema gerenciador de Banco de dados relacional desenvolvido pela Sybase em parceria com a Microsoft.</p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="info-card">
-                    <div className="info-content">
-                        <img src={figma} alt="Figma Logo" className="info-image"/>
-                        <div className="info-text">
-                            <h3 className="info-title">Figma</h3>
-                            <p className="info-description">
-                                <p>Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop.</p>
-                            </p>
+                    <div className="info-card">
+                        <div className="info-content">
+                            <img src={figma} alt="Figma Logo" className="info-image"/>
+                            <div className="info-text">
+                                <h3 className="info-title">Figma</h3>
+                                <p className="info-description">
+                                    <p>Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop.</p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="info-card">
-                    <div className="info-content">
-                        <img src={canva} alt="Canva Logo" className="info-image"/>
-                        <div className="info-text">
-                            <h3 className="info-title">Canva</h3>
-                            <p className="info-description">
-                                <p>Canva é uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais.</p>
-                            </p>
+                    <div className="info-card">
+                        <div className="info-content">
+                            <img src={canva} alt="Canva Logo" className="info-image"/>
+                            <div className="info-text">
+                                <h3 className="info-title">Canva</h3>
+                                <p className="info-description">
+                                    <p>Canva é uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais.</p>
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    </div>
                 </div>
-            </div>
         </section>
     );
 }

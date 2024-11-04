@@ -13,6 +13,8 @@
 
 body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0; 
 }
 
 .empresa-container {
@@ -22,6 +24,7 @@ body {
     background-color: var(--maincolor);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .section-content {
@@ -179,6 +182,33 @@ body {
 
     .image-content img {
         max-height: 400px;
+    }
+}
+
+@media (min-width:1920px){
+    .empresa-container {
+        padding-top: 120px;
+    }
+
+    .text-content h2{
+        font-size: 35px;
+    }
+
+    .text-content h1{
+        font-size: 35px;
+    }
+
+    .text-content p{
+        font-size: 20px;
+        text-align: justify-all;
+    }
+
+    .section-content {
+        margin: 20px 0; 
+    }
+
+    .image-content img {
+        max-height: 350px;
     }
 }
 

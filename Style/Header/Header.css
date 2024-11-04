@@ -3,7 +3,6 @@
     margin: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    max-width: 100vw;
 }
 
 :root {
@@ -16,7 +15,7 @@
 body {
     margin: 0;
     background-color: var(--main-color);
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -84,7 +83,7 @@ body {
         background-color: var(--main-color);
         top: 80px; 
         right: 0; 
-        width: 100vw;
+        width: 100%;
         padding: 10px;
         z-index: 1001;
         animation: fadeIn 0.5s ease-in-out;
