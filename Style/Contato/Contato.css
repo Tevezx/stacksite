@@ -12,7 +12,7 @@
 
 .contact-section {
     width: 100vw;
-    min-height: 100vh;    
+    min-height: 100%;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +180,7 @@
 
 
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1440px) {
     
     .contact-highlight, .contact-subtitle, .contact-title{
         font-size: 5rem;
@@ -193,9 +193,10 @@
         margin-bottom: 40px;
     }
     .illustration{
-        left: 40em;
-        bottom: 39em;        
+        left: 23%;
+        bottom: 65%;       
     }
+    
     .contact-highlight, .contact-subtitle, .contact-title, .contact-text{
         align-self: flex-start;
         font-size: 35px;
@@ -207,17 +208,19 @@
     }
     
     .contact-section{
-        height: 110vh; /* Força a seção a ocupar a altura exata da tela */
+        height: 130vh; /* Força a seção a ocupar a altura exata da tela */
         justify-content: flex-start;
         padding-left: 100px;
-        width: 100vh;
+        width: 100%;
     }
-    .star-icon {
-        top: 10em;
-        width: 100px;
-        left: 90em;
-    } 
+   .star-icon{
+        left: 80em;
+        top: 9em;
+   }
 }
+
+    
+
 @media screen and (min-width: 2560px){
     .contact-highlight, .contact-subtitle, .contact-title{
         font-size: 5rem;
