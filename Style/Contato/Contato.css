@@ -182,6 +182,8 @@
 
 
 
+
+
 @media screen and (min-width:1440px) {
     
     .contact-highlight, .contact-subtitle, .contact-title{
@@ -213,7 +215,7 @@
         height: 130vh; /* Força a seção a ocupar a altura exata da tela */
         justify-content: flex-start;
         padding-left: 100px;
-        width: 100%;
+        width: 100vw;
     }
    .star-icon{
         left: 80em;
