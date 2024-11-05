@@ -6,6 +6,13 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    --main-color: #FFF;
+    --cinza-claro: #4A5568;
+    --roxo: #A718A1;
+    --roxo-escuro: #5F2278;
+}
+
 .home-container {
     width: 100%;
     height: 100vh; 
@@ -15,6 +22,7 @@ body {
     justify-content: center;
     background-color: var(--maincolor);
     position: relative;
+    font-family: outfit;
 }
 
 .logo_home {
@@ -34,7 +42,7 @@ body {
 .logo-description {
     margin-top: 0.5em; 
     font-size: 1em; 
-    color: #748296;
+    color: var(--cinza-claro);
     text-align: center; 
     max-width: 80%;
 }
@@ -42,9 +50,16 @@ body {
 .saibamais {
     margin-top: 0.5em;
     text-decoration: none;
-    color: var(--link);
+    color: var(--roxo-escuro);
     font-weight: bold;
     font-size: 1em;
+    font-family: inter;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.saibamais:hover{
+    color: var(--roxo);
+    transform: scale(1.1);
 }
 
 .ilustração {

@@ -59,6 +59,7 @@ footer {
 .subtitulo_img {
     color: var(--main-color);
     font-size: 14px;
+    font-family: inter;
 }
 
 .nav-bar {
@@ -69,6 +70,7 @@ footer {
     color: var(--main-color);
     font-weight: bold;
     font-size: 14px;
+    font-family: inter;
 }
 
 .lista {
@@ -79,7 +81,8 @@ footer {
     display: flex;
     flex-direction: column; 
     gap: 0.5rem; 
-    align-items: flex-start; 
+    align-items: flex-start;
+    font-family: poppins; 
 }
 
 .lista a {
@@ -89,7 +92,7 @@ footer {
 }
 
 .lista a:hover {
-    color: var(--rosa);
+    color: var(--roxo);
     transform: scale(1.1);
 }
 
@@ -101,6 +104,7 @@ footer {
     font-size: 14px;
     font-weight: bold;
     color: var(--main-color);
+    font-family: inter
 }
 
 .footer-social {
@@ -127,6 +131,11 @@ footer {
     padding-top: 1rem;
     width: 100%;
     margin-top: 1rem;
+    font-family: inter;
+}
+
+.duvida{
+    font-family: poppins;
 }
 
 @media screen and (min-width: 1024px) {

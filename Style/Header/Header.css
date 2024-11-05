@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -28,6 +27,7 @@ body {
     height: auto;
     z-index: 1000;
     position: fixed;
+    font-family: inter;
 }
 
 .logo-container {
@@ -154,6 +154,7 @@ body {
     .desktop-menu .link-desktop:hover {
         color: var(--roxo);
         border-bottom: 2px solid var(--roxo);
+        transition: color 1.10s ease, transform 1.10s ease;
     }
 
     .contato-desktop {

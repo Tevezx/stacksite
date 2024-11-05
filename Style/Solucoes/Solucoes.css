@@ -35,6 +35,7 @@ body {
     color: var(--descricao);
     word-spacing: 5px;
     align-self: self-start;
+    font-family: outfit regular;
 }
 
 .titulo_solucoes1 {
@@ -43,7 +44,7 @@ body {
     font-weight: bold;
     text-align: left;
     align-self: flex-start; 
-    
+    font-family: outfit;
 }
 
 .txtSolucao{
@@ -64,6 +65,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: var(--black);
+    font-family: outfit;
 }
 .txt_nossas_solucoes{
     background: linear-gradient(to right, #A718A1, #5F2278); 
@@ -104,6 +106,7 @@ body {
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: inter;
 }
 .descricao_mgp{
     line-height: 1.5;
@@ -120,13 +123,14 @@ body {
     font-weight: bold;
     padding-top: 15px;
     text-align: right;
+    font-family: inter;
 }
 .emBreve{
     color: var(--descricao);
     font-size: 13px;
     padding-bottom: 20px;
     margin-top: 3em;
-    
+    font-family: Inter;
 }
 
 @media screen and (min-width: 1024px)  {

@@ -49,12 +49,14 @@ body {
     color: var(--subcolor);
     font-size: 24px;
     font-weight: normal;
+    font-family: outfit;
 }
 
 .text-content h1 {
     font-size: 24px;
     margin-bottom: 1em;
     font-weight: bold;
+    font-family: outfit;
 }
 
 .sobre-nossa {
@@ -74,6 +76,7 @@ body {
     line-height: 1.4;
     color: var(--descricao);
     margin-bottom: 20px;
+    font-family: outfit regular;
 }
 
 .image-content {

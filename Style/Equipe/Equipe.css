@@ -44,6 +44,10 @@ body, html {
     margin: 0;
 }
 
+.text-equipe{
+    font-family: outfit;
+}
+
 .text-tecnologia {
     background: linear-gradient(135deg, #A718A1, #5F2278);
     -webkit-background-clip: text;
@@ -115,6 +119,7 @@ body, html {
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    font-family: outfit;
 }
 
 .conhecanossa {
@@ -134,12 +139,14 @@ body, html {
 .h2-membros {
     font-weight: bold;
     color: var(--subcolor);
+    font-family: outfit;
 }
 
 .desc-membros {
     color: var(--descricao);
     font-weight: normal;
     font-size: 14px;
+    font-family: inter;
 }
 
 .member-card {
@@ -232,6 +239,7 @@ body, html {
 
 .txt_ferramentas {
     display: inline-block;
+    font-family: outfit;
 }
 
 .txt_conhecaas, .ferramentas_utili, .utili_equipe {
@@ -288,12 +296,14 @@ body, html {
     font-weight: bold;
     margin: 0 0 8px 0;
     color: #212121;
+    font-family: inter;
 }
 
 .info-description {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
+    font-family: outfit;
 }
 
 .info-description a {

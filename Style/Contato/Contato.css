@@ -65,11 +65,13 @@
     max-width: 90%;
     line-height: 1.5;
     margin-bottom: 25px;
+    font-family: outfit regular;
 }
 
 .contact-title {
     color: var(--black);
     font-weight: bold;
+    font-family: outfit;
 }
 
 .contact-title, .contact-highlight, .contact-subtitle {
