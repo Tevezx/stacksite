@@ -67,7 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 3rem; 
-    z-index: 1000;
+    z-index: 1;
     position: relative;
 }
 
