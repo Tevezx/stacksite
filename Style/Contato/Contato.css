@@ -181,24 +181,21 @@
 }
 
 
-
-
-
 @media screen and (min-width:1440px) {
     
     .contact-highlight, .contact-subtitle, .contact-title{
         font-size: 5rem;
     }
     .button-container { 
-        align-self: flex-start; /* Alinha a button-container à esquerda */
+        align-self: flex-start;
         position: relative;
     }
     .social-button {
         margin-bottom: 40px;
     }
     .illustration{
-        left: 23%;
-        bottom: 65%;       
+        left: 25%;
+        bottom: 75%;       
     }
     
     .contact-highlight, .contact-subtitle, .contact-title, .contact-text{
@@ -212,7 +209,7 @@
     }
     
     .contact-section{
-        height: 130vh; /* Força a seção a ocupar a altura exata da tela */
+        height: 100vh;
         justify-content: flex-start;
         padding-left: 100px;
         width: 100vw;

@@ -109,6 +109,7 @@ body {
         text-align: left;
         max-width: 40%;
         align-items: flex-start; 
+        padding-bottom: 8em;
     }
 
     .logo_home img {
@@ -163,6 +164,10 @@ body {
 @media (min-width: 1440px) {
     .home-container {
         padding: 8em 8em;
+    }
+
+    .logo_home{
+        padding-bottom: 8em;
     }
 
     .logo_home img {

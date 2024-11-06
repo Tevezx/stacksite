@@ -134,7 +134,6 @@ body {
 }
 
 @media screen and (min-width: 1024px)  {
-
     .titulo_solucoes1{
         margin-top: 1em;
     }
@@ -175,7 +174,7 @@ body {
     .Solucao-container{
         padding-left: 4em;
         justify-content: flex-start;      
-        min-height: 80vh; 
+        height: 110vh; 
     }
     .btn_link{
         bottom: 19em;
@@ -191,7 +190,7 @@ body {
     .textInicial{
         display: flex;
         align-self: flex-start;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .img_telas_app{
         width: 600px;
@@ -221,7 +220,7 @@ body {
         height: 15px;
     }
     .Solucao-container{
-        min-height: 110vh;
+        min-height: 135vh;
     }
     .titulo_solucoes1{
        margin-top: 1em;
