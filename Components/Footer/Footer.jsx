@@ -30,16 +30,16 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className="footer-social">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://web.facebook.com/people/Stack-Corp/pfbid02NgtgG1J6f8F7qGcKFoirep6gQqDzQoBdvuU29qz4Nnc14W9xEaTXBCJMT4iWGHPBl/?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank" rel="noopener noreferrer">
                         <img src={facebook} alt="Facebook" />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/stack_corp" target="_blank" rel="noopener noreferrer">
                         <img src={instagram} alt="Instagram" />
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/StackCorp" target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="GitHub" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/stack-inova%C3%A7%C3%A3o-009557311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                         <img src={linkedln} alt="LinkedIn" />
                     </a>
                 </div>
