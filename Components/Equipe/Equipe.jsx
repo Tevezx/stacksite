@@ -26,11 +26,11 @@ import canva from '../../src/assets/canva.png';
 const images = [javascript, node, css, sql, react];
 
 const teamMembers = [
-    { name: "Ana", image: ana, description: "Desenvolvedora Front-end" },
-    { name: "Carlos", image: carlos, description: "Desenvolvedor Back-end" },
-    { name: "Davi", image: davi, description: "Especialista em UX/UI" },
-    { name: "Eduardo", image: eduardo, description: "Engenheiro de Dados" },
-    { name: "Gabriela", image: gabriela, description: "Analista de Sistemas" },
+    { name: "Ana", image: ana, description: "Arquivista do Stack" },
+    { name: "Carlos", image: carlos, description: "Desenvolvedor Front-end" },
+    { name: "Davi", image: davi, description: "Desenvolvedor Mobile" },
+    { name: "Eduardo", image: eduardo, description: "Desenvolvedor Front-end" },
+    { name: "Gabriela", image: gabriela, description: "Designer ut" },
     { name: "Endy", image: endy, description: "Gerente de Projetos" },
     { name: "Miguel", image: miguel, description: "Desenvolvedor Full Stack" },
 ];
