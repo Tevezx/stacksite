@@ -34,8 +34,8 @@ export default function Empresa() {
                     </div>
                     <h2>Conheça um pouco mais</h2>
                     <h1>
-                        <span className="sobre-nossa">Sobre Nossa</span>
-                        <span className="empresa-gradient"> Empresa</span>
+                        <span className="sobre-nossa">Sobre Nossos</span>
+                        <span className="empresa-gradient"> Valores</span>
                     </h1>
                     <p>
                         A visão da empresa é ser reconhecida por sua excelência em acumular soluções, 
