@@ -1,42 +1,35 @@
-![Logo da Empresa](src/assets/logo_escrita.png) </br>
+![Logo do Projeto](src/assets/logo_cyclus.png) </br>
 
-# Projeto Stack
-Este repositório contém o código-fonte e a documentação relacionada ao site da empresa Stack, uma fábrica de software, desenvolvido como parte do trabalho de conclusão de curso.
+# Projeto Cyclus
+Este repositório contém o código-fonte e a documentação relacionada ao **Cyclus**, um sistema de monitoramento da temperatura da carne utilizando Arduino, desenvolvido como parte do trabalho de conclusão de curso.
 
 ## Descrição
 
-O site da empresa Stack foi desenvolvido como parte do trabalho de conclusão de curso para demonstrar as habilidades e competências adquiridas ao longo do curso. A Stack é uma empresa fictícia que oferece serviços de desenvolvimento de software sob medida para clientes de diversos setores.
+O **Cyclus** foi desenvolvido com o objetivo de auxiliar no controle de qualidade alimentar, garantindo o monitoramento em tempo real da temperatura da carne durante o armazenamento e transporte. O projeto integra hardware (Arduino e sensores) e software (aplicativo/web) para fornecer dados confiáveis e acessíveis ao usuário.
 
 ## Funcionalidades
 
-O site possui as seguintes funcionalidades principais:
+O sistema oferece as seguintes funcionalidades principais:
 
-- **Apresentação da Empresa**: Uma página inicial que apresenta a empresa Stack, sua missão, visão, membros e valores.
-- **Serviços**: Uma seção que descreve os serviços oferecidos pela empresa, incluindo desenvolvimento de software, consultoria, e suporte técnico.
-- **Contato**: Contato para os clientes interessados em solicitar orçamentos ou obter mais informações sobre os serviços da empresa.
+- **Monitoramento em Tempo Real**: Exibe a temperatura da carne de forma contínua e precisa.  
+- **Alertas de Segurança**: Notificações quando a temperatura ultrapassa os limites seguros para conservação.  
+- **Histórico de Dados**: Armazenamento das informações coletadas para análise posterior.  
+- **Interface Amigável**: Aplicativo com design simples e intuitivo para fácil utilização por clientes e gestores.  
 
 ## Tecnologias Utilizadas
 
-O site da empresa Stack foi desenvolvido utilizando as seguintes tecnologias:
+O **Cyclus** foi desenvolvido utilizando as seguintes tecnologias:
 
-- **React**: Biblioteca JavaScript para a construção de interfaces de usuário.
-- **HTML5**: Linguagem de marcação para estruturar o conteúdo da página.
-- **CSS3**: Linguagem de estilo para definir a apresentação e o layout do site.
-  
-## Visite nosso site!
-  https://tevezx.github.io/stacksite
-  
+- **Arduino**: Plataforma de prototipagem eletrônica para coleta de dados via sensores.  
+- **C/C++**: Linguagem utilizada na programação do Arduino.    
+- **HTML5 e CSS3**: Estruturação e estilização da interface.   
+
 ## Instalação e Uso
 Para utilizar o código-fonte deste projeto, siga as instruções abaixo:
-```bash
-1. Clone este repositório em seu ambiente local:
-git clone https://github.com/bsDuduh/stack-site.git
 
-# 2. Instale as dependências do projeto:
-cd stack-site
-npm install
+```bash
+# 1. Clone este repositório em seu ambiente local:
+git clone https://github.com/Tevezx/cyclus.git
 
 # 3. Inicie o servidor de desenvolvimento:
 npm run dev
-
-
